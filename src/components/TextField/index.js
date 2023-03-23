@@ -1,4 +1,4 @@
-const TextField = ({labelName, value, onChange}) => {
+const TextField = ({labelValue, value, onChange}) => {
 
   const handleOnChange = (e) => {
     const val = e.target.value;
@@ -7,7 +7,7 @@ const TextField = ({labelName, value, onChange}) => {
 
   return (
     <div class="form-group">
-      <label for="">{labelName}</label>
+      <label for="">{labelValue}</label>
       <input
       style={{marginBottom: '14px'}}
         value={value}

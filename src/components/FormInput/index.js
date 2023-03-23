@@ -17,24 +17,24 @@ const FormInput = () => {
   return (
     <div style={{ margin: "32px" }}>
       <TextField
-        labelName={"Nama Mobil"}
+        labelValue={"Nama Mobil"}
         value={valueNamaMobil}
         onChange={setNamaMobil}
       />
       <Select
-        labelName={"Kategori"}
+        labelValue={"Kategori"}
         items={catOptions}
         onChange={setCategory}
         value={valueCategory}
       />
       <Select
-        labelName={"Harga"}
+        labelValue={"Harga"}
         items={hargaOptions}
         onChange={setHarga}
         value={valueHarga}
       />
       <Select
-        labelName={"Status"}
+        labelValue={"Status"}
         items={statusOptions}
         onChange={setStatus}
         value={valueStatus}
