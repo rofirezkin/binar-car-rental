@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import FormInput from "./components/FormInput";
 
-function App() {
+//props dan state adalah bagaimana caranya component react kita menghandle data
+// erat kaitannya dengan data flow di component react kita
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Card description="Binar Bagus Banget" reviewer="rijarmdh" />
+      <FormInput />
     </div>
   );
-}
+};
 
 export default App;
