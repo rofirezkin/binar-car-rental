@@ -1,0 +1,45 @@
+.car-image {
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-position-y: 100px;
+}
+
+.background-car {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 70%;
+  background-color: #0d28a6;
+  width: 100%;
+  border-top-left-radius: 100px;
+}
+
+.hero-container {
+  background-color: #f1f3ff;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .service-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    height: 160px;
+  }
+  .hero-header-left {
+    margin-left: 0px;
+  }
+}
+
+.hero-image-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .hero-header-left {
+  margin-left: 40px;
+} */

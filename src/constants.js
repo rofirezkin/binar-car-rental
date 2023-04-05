@@ -1,30 +1,49 @@
-export const catOptions = [
+export const category = [
   {
-    id: 1,
-    text: "2-4 Orang",
+    id: 0,
+    text: "2 - 4 Orang",
+    value: "small",
   },
   {
-    id: 2,
-    text: "4-6 Orang",
+    id: 1,
+    text: "4 - 6 Orang",
+    value: "medium",
   },
   {
     id: 3,
-    text: "6-8 Orang",
+    text: "6 - 8 Orang",
+    value: "large",
   },
 ];
 
-export const hargaOptions = [
+export const harga = [
   {
-    id: 4,
-    text: 400000,
+    id: 0,
+    text: "< Rp. 400.000",
+    value: 400000,
   },
   {
-    id: 5,
-    text: 500000,
+    id: 1,
+    text: "Rp. 400.000 - Rp. 600.000",
+    value: 600000,
   },
   {
-    id: 6,
-    text: 600000,
+    id: 2,
+    text: "> Rp. 600.000",
+    value: 800000,
+  },
+];
+
+export const status = [
+  {
+    id: 0,
+    text: "Disewa",
+    value: false,
+  },
+  {
+    id: 2,
+    text: "Tidak Disewa",
+    value: true,
   },
 ];
 

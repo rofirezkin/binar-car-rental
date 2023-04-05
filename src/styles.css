@@ -1,0 +1,38 @@
+html * {
+  font-family: Arial !important;
+}
+
+
+
+
+.bg-hero {
+  background-color: #f1f3ff;
+}
+
+.text-hero {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.box {
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+}
+.text-box {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-box-desc {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}

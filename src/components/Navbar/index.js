@@ -1,64 +1,42 @@
-import "./style.css"
+import { Link } from "react-router-dom";
+import "./style.css";
 
 const Navbar = () => {
   return (
-    <>
-      <ul class="nav nav-tabs" id="navId">
-        <li class="nav-item">
-          <a href="#tab1Id" class="nav-link active styCustomColor">
-            Active
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            href="#s"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false"
-            style={{color: "blue"}}
-          >
-            Dropdown
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#tab2Id">
-              Action
-            </a>
-            <a class="dropdown-item" href="#tab3Id">
-              Another action
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#tab4Id">
-              Action
-            </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="#tab5Id" class="nav-link">
-            Another link
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="##" class="nav-link disabled">
-            Disabled
-          </a>
-        </li>
-      </ul>
+    <nav className="navbar navbar-expand-lg navbar-light bg-hero ">
+      <div className="container">
+        <Link to="#">
+          <p className="navbar-brand">Navbar</p>
+        </Link>
 
-      <div class="tab-content">
-        <div
-          class="tab-pane fade show active"
-          id="tab1Id"
-          role="tabpanel"
-        ></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <div className="navbar-nav ml-auto">
+            <Link className="nav-link active" aria-current="page">
+              Our Services
+            </Link>
+            <Link className="nav-link active" aria-current="page">
+              Why Us
+            </Link>
+            <Link className="nav-link active" aria-current="page">
+              Testimonial
+            </Link>
+            <Link className="nav-link active" aria-current="page">
+              FAQ
+            </Link>
+          </div>
+        </div>
       </div>
-    </>
+    </nav>
   );
 };
 
-export default Navbar
+export default Navbar;

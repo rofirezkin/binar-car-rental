@@ -1,28 +1,37 @@
-const Select = ({ labelValue, items, onChange, value }) => {
+const Select = ({
+  labelValue,
+  items,
+  onChange,
+  value,
+  placeholder,
+  disabled,
+}) => {
   const handleOnChange = (e) => {
     const val = e.target.value;
     onChange(val);
   };
 
   return (
-    <div class="form-group" style={{ marginBottom: "14px" }}>
-      <label for="">{labelValue}</label>
+    <>
+      <label htmlFor="">{labelValue}</label>
       <select
+        disabled={disabled}
         value={value}
-        class="form-control"
+        className="form-control"
         name=""
         id=""
         onChange={handleOnChange}
       >
-        {items.map(({ id, text }) => {
+        <option value="">{placeholder}</option>
+        {items.map(({ id, text, value }) => {
           return (
-            <option key={id} value={text}>
+            <option key={id} value={value}>
               {text}
             </option>
           );
         })}
       </select>
-    </div>
+    </>
   );
 };
 

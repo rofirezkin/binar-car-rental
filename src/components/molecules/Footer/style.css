@@ -1,0 +1,8 @@
+.display-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.margin-footer {
+  margin-top: 100px;
+}
