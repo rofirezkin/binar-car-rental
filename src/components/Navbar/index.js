@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-hero ">
       <div className="container">
-        <Link to="#">
-          <p className="navbar-brand">Navbar</p>
+        <Link to="/">
+          <p className="navbar-brand">Binar Car Rental</p>
         </Link>
 
         <button

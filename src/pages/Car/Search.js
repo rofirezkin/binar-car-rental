@@ -112,12 +112,7 @@ function Search({ setData, detail, disabled, data }) {
             <div className="p-2">
               <span>Harga</span>
               {detail === true ? (
-                <TextField
-                  value={data?.price}
-                  disabled={disabled}
-                  placeholder="Ketik Nama/tipe mobil"
-                  onChange={(e) => setName(e)}
-                />
+                <TextField value={data?.price} disabled={disabled} />
               ) : (
                 <Select
                   disabled={disabled}
@@ -132,11 +127,9 @@ function Search({ setData, detail, disabled, data }) {
             <div className="col-3">
               <div className="p-2">
                 <span>Status</span>
-                <Select
-                value={detail.status}
-                  placeholder="Masukan Harga Sewa per Hari"
-                  items={harga}
-                  onChange={(value) => setPrice(value)}
+                <TextField
+                  value={data?.status === false ? "Disewa" : "Tidak Disewa"}
+                  disabled={disabled}
                 />
               </div>
             </div>
